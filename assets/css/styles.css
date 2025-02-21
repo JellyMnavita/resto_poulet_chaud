@@ -229,7 +229,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6,156,84,.5);
+  background: var(--first-color);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -441,6 +441,33 @@ color: white;
 .contact__description{
   margin-bottom: var(--mb-3);
 }
+
+
+.mybtn{
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 50px;
+  border: 25px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  align-items: center;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  background-image: linear-gradient(to right,var(--first-color),var(--first-color-alt),#d2d2d2);
+  cursor: pointer;
+  background-size: 200% ;
+  transition: .5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mybtn:hover{
+  background-position: right;
+}
+
+
 .container{
 	position: relative;
 	width: 100%;
@@ -712,3 +739,5 @@ textarea{
     padding-left: 82px;
   }
 }
+
+
